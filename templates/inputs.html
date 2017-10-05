@@ -1,0 +1,23 @@
+
+
+{% extends "basics.html" %}
+
+{% block content %}
+
+<form action = "" method="POST">
+  <label> Username </label>
+    <input type="text" name="username" value='{{username}}'/>
+    <p class="error">{{username_err}}</p>
+  <label>Password </label>
+    <input type="password" name="password"/>
+    <p class="error">{{password_err}}</p>
+  <label>Verify Password  </label>
+    <input type="password" name="verify_password"/>
+    <p class="error">{{verify_password_err}}</p>
+  <label> Email (Optional)  </label>
+    <input type="text" name="email" value='{{email}}'/>
+    <p class="error">{{email_err}}</p>
+  <input type="submit" value="Sign Up"/>
+</form>
+
+{% endblock %}
